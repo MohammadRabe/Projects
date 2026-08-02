@@ -1,3 +1,9 @@
+.welcome-section > h1{
+    transition: letter-spacing .5s ease-in-out;
+}
+.welcome-section > h1:hover{
+    letter-spacing: 1px;
+}
 .ant-card-cover img{
     width: 300px;
     border-radius: 10px;
@@ -32,5 +38,5 @@ background-color: black;
     transition: transform 0.3s ease-in-out;
 }
 .movie-card:hover{
-    transform: scale(1.05) translate(0,-10px);
+    transform: scale(1.05) translateY(-20px);
 }
