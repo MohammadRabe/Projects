@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body>* {
+    color: #9C9C9C;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.styled-button {
+    color: white;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-weight: bold;
+    border: none;
+    transition: all .5s;
+}
+.styled-button:hover {
+    font-size: larger;
+}
+
+
+.container{
+    margin-top:30px;
+    width: 70%;
+}
+.container .title{
+    margin:40px 0px;
+}
+.container .title h1{
+    transition: all .5s;
+}
+.container .title h1:hover{
+    letter-spacing: 10%;
+}
+/* -------------------------- */
+.intro {
+    background-color: #080808;
+}
+
+.intro .navbar {
+    background-color: #1B1B1B;
+}
+
+.intro nav ul {
+    margin: 0;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+.intro .navbar {
+    z-index: 2;
+    margin: 0px;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    background-color: #1B1B1B;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.intro .nav-pages li:hover,
+.intro .navbar .social i:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+.intro .navgar .navbar-toggler:hover{
+    border-color: white;
+}
+
+.intro .container .profile-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: filter  .5s;
+}
+.intro .container .profile-img img:hover {
+    filter:brightness(75%);
+}
+
+
+.intro .personal-info button {
+
+    background-color: #3F8E00;
+
+}
+
+.companies {
+    background-color: #080808;
+
+}
+
+.companies li {
+    text-align: center;
+}
+.companies img
+{
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.companies img:hover
+{
+    transform: scale(1.2);
+}
+
+
+/* -------------------------- */
+
+.case-studies {
+    line-height: 1.8;
+}
+
+.case-studies p {
+    line-height: 1.7;
+}
+
+.case-studies .container>* button {
+    justify-self: end;
+    align-self: end;
+}
+
+.top-badge {
+    padding: 15px;
+    border-radius: 60px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.case-studies .fintech-text .top-badge {
+    color: #FFA217;
+    background-color: #FFF6E9;
+}
+
+.case-studies .fintech-text button {
+    background-color: #FFA217;
+}
+
+.case-studies .edtech-text button {
+    background-color: #000AFF;
+
+}
+.case-studies .edtech-text .top-badge {
+    color: #000AFF;
+    background-color: #D0E6FF;
+}
+.case-studies .pharma-text .top-badge {
+    color: #2AB090;
+    background-color: #E0FFF8;
+}
+.case-studies .pharma-text button {
+    background-color: #2AB090;
+}
+
+
+
+
+/* -------------------- */
+
+.testimonials{
+    background-color: #080808;
+}
+.testimonials .container .title{
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.testimonials .box{
+    padding: 30px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: -2px 0px 0px 0px #484848;
+
+}
+
+.testimonials .box i{
+    color: white;
+    font-size: 60px;
+    position:absolute;
+    top: -35px;
+    left: 20px;
+    transition: .5s;
+}
+.testimonials .box:hover > i{
+    transform: rotate(180deg);
+}
+.testimonials .box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonials .box .client{
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* -------------------------- */
+
+.recent-work .carousel {
+
+    width: 100%;
+}
+.recent-work .slide-side{
+    width: 45%;
+}
+.recent-work .slide-side .card{
+    border: none;
+
+}
+.recent-work .slide-side .card-body{
+    padding: 30px 0px;
+}
+.recent-work .slide-side .card .h3{
+    font-weight: 900;
+}
+
+.recent-work .a-slide .slide-side .btn{
+    background-color: #3F8E00;
+    color: white;
+    transition: all .5s;
+    font-weight: bold;
+}
+.recent-work .a-slide .slide-side .btn:hover{
+    font-size: larger;
+    transform: translate(10px);
+}
+
+.recent-work .carousel .carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    transform: translate(-100px);
+}
+
+.recent-work .carousel .carousel-control-next{
+     position: absolute;
+    top: 50%;
+    transform: translate(100px);
+}
+.recent-work .carousel i{
+    width: 100%;
+    height: 100%;
+    color: #9C9C9C;
+    font-size: 50px;
+}
+
+
+/* ------------------------------ */
+
+.get-in-touch{
+    background-color: #080808;
+}
+
+.get-in-touch form{
+    width: 60%;
+}
+.get-in-touch label{
+    color: white;
+    font-weight: 600;
+}
+.get-in-touch button{
+    color: white;
+    background-color: #3F8E00;
+    padding: 15px;
+    margin-top: 5px;
+}
+.get-in-touch button:hover{
+    border: 2px solid #3F8E00;
+    color: #3F8E00;
+}
