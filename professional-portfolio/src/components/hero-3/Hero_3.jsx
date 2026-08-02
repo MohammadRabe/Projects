@@ -49,7 +49,7 @@ const Hero_3 = () => {
                 {
                 skills.map((skill)=>{
                     return(
-                        <SkillBar skillName={skill.name} level={skill.level} />
+                            <SkillBar key={skill.name} skillName={skill.name} level={skill.level} />
                     );
                 })
                 }
