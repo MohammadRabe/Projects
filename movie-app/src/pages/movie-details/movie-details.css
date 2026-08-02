@@ -1,0 +1,144 @@
+.movie-section {
+    width: 100%;
+    min-height: 400px;
+    margin-top: 30px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.movie-section > img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.movie-text {
+    position: relative;
+    flex: 1;
+    padding-top: 10px;
+    max-width: 600px;
+}
+
+.movie-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 2px;
+}
+
+.movie-text > span {
+    display: block;
+    color: #999;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.rate-stars {
+    color: #222 !important;
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+.movie-text p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.35;
+    margin: 15px 0;
+}
+
+.genres-section {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.genres-section .badge {
+    background-color: #ffd83d;
+    color: #222;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.duration-lang {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.duration-lang b {
+    margin-right: 8px;
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.languages span {
+    margin-right: 5px;
+}
+
+.companies {
+    margin-top: 20px;
+}
+
+.companies span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+}
+
+.rate-stars::before {
+    content: "★ ★ ★ ★ ☆";
+    margin-right: 15px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .movie-section {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-section > img {
+        width: 220px;
+        height: 330px;
+    }
+
+    .movie-text {
+        font-size: 24px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .duration-lang {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+.heart {
+    font-size: 24px;
+    color: #ffd83d;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+    color: #ff4d4f;
+}
