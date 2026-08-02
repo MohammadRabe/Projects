@@ -1,0 +1,7 @@
+.track-card, .opposite-card{
+    transition: all 0.3s ease-in-out;
+}
+.track-card:hover,
+.opposite-card:hover{
+    transform: scale(1.05) ;
+}
