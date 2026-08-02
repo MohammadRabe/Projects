@@ -81,7 +81,7 @@ const MoviesSection = () => {
             {
             isLoading? <Spin indicator={<LoadingOutlined style={{ fontSize: 48, color:'#ffd104' }} spin />} />
             :
-            <div className="d-flex flex-wrap justify-content-center gap-2 m-5 gap-y-3">
+            <div className="d-flex flex-wrap justify-content-center gap-2 gap-y-3">
 
                 {movies.map((movie) => (
 
