@@ -145,17 +145,15 @@ function CartPage({ cart, updateQuantity, removeFromCart }) {
                 <span>${total.toFixed(2)}</span>
               </div>
 
-              <button
+              <Link
                 className="btn btn-dark w-100 btn-lg"
-                disabled
+                to="/checkout"
                 title="Checkout is not part of the required project"
               >
                 Checkout
-              </button>
+              </Link>
 
-              <small className="text-muted d-block text-center mt-2">
-                Checkout is not included in the required version.
-              </small>
+              
 
               <Link
                 to="/"

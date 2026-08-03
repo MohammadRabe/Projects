@@ -7,6 +7,9 @@ import CartPage from "./pages/CartPage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
+import CheckoutPage from "./pages/CheckoutPage";
+import ThankYouPage from "./pages/ThankYouPage";
+
 
 function App() {
   const [cart, setCart] = useState(() => {
@@ -104,6 +107,15 @@ function App() {
             }
           />
 
+          <Route
+            path="/checkout"
+            element={<CheckoutPage />} 
+          />
+
+          <Route
+          path="/thank-you"
+          element={<ThankYouPage setCart={setCart}/>} 
+          />
           <Route
             path="/login"
             element={<Login onLogin={login} />}

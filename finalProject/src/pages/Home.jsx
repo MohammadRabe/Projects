@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/ProductCard/ProductCard";
 import Footer from "../components/Footer";
 import productsData from "../data/products.json";
 
@@ -159,10 +159,11 @@ function Home({ addToCart }) {
                     className="col-sm-6 col-xl-4"
                     key={product.id}
                   >
-                    <ProductCard
-                      product={product}
-                      addToCart={addToCart}
-                    />
+                      <ProductCard
+                        product={product}
+                        addToCart={addToCart}
+                      />
+
                   </div>
                 ))}
               </div>
