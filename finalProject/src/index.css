@@ -4,6 +4,10 @@ body {
   background-color: #f8f9fa;
   color: #212529;
 }
+body::selection {
+  background-color: #212529;
+  color: #f8f9fa;
+}
 
 a {
   text-decoration: none;
