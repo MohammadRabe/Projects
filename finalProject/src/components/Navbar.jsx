@@ -6,7 +6,7 @@ function Navbar({ cartCount, user, logout }) {
       <div className="container">
         <Link className="navbar-brand" to="/">
           <i className="bi bi-bag-check-fill me-2"></i>
-          AllAboutFit
+          Shoply
         </Link>
 
         <button

@@ -43,7 +43,7 @@ function Home({ addToCart }) {
           <div className="row align-items-center">
             <div className="col-lg-7">
               <p className="text-warning fw-bold mb-2">
-                WELCOME TO SHOPEASE
+                WELCOME TO Shoply
               </p>
 
               <h1 className="display-4 fw-bold">
