@@ -4,7 +4,7 @@ function Navbar({ cartCount, user, logout }) {
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow-sm">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/#hero-section">
           <i className="bi bi-bag-check-fill me-2"></i>
           Shoply
         </Link>

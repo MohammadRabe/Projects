@@ -5,7 +5,7 @@ function ProductCard({ product, addToCart }) {
   return (
     <div className="card product-card h-100 shadow-sm">
       <img
-      onClick={() => navigate(`/product/${product.id}`)} 
+        onClick={() => navigate(`/product/${product.id}`)} 
         src={product.image}
         className="card-img-top product-image"
         alt={product.title}

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import productsData from "../data/products.json";
-import Footer from "../components/Footer";
 
 function ProductPage({ addToCart }) {
   const { id } = useParams();
@@ -90,7 +89,6 @@ function ProductPage({ addToCart }) {
         </div>
       </div>
 
-      <Footer />
     </>
   );
 }

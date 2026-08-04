@@ -9,7 +9,7 @@ import Signup from "./pages/Signup";
 import NotFound from "./pages/NotFound";
 import CheckoutPage from "./pages/CheckoutPage";
 import ThankYouPage from "./pages/ThankYouPage";
-
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [cart, setCart] = useState(() => {
@@ -128,6 +128,7 @@ function App() {
 
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </main>
     </>
   );

@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import ProductCard from "../components/ProductCard/ProductCard";
-import Footer from "../components/Footer";
 import productsData from "../data/products.json";
 
 function Home({ addToCart }) {
@@ -38,7 +37,7 @@ function Home({ addToCart }) {
 
   return (
     <>
-      <section className="hero-section py-5">
+      <section className="hero-section py-5" id="hero-section">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -172,7 +171,6 @@ function Home({ addToCart }) {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }
