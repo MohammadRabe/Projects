@@ -3,8 +3,9 @@ import { useNavigate } from "react-router-dom";
 function ProductCard({ product, addToCart }) {
   const navigate = useNavigate();
   return (
-    <div onClick={() => navigate(`/product/${product.id}`)} className="card product-card h-100 shadow-sm">
+    <div className="card product-card h-100 shadow-sm">
       <img
+      onClick={() => navigate(`/product/${product.id}`)} 
         src={product.image}
         className="card-img-top product-image"
         alt={product.title}
