@@ -37,7 +37,7 @@ function Home({ addToCart }) {
 
   return (
     <>
-      <section className="hero-section py-5" id="hero-section">
+      <section className="hero-section py-5">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
