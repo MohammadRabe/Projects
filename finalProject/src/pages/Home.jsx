@@ -1,16 +1,25 @@
 import { useEffect, useMemo, useState } from "react";
 import ProductCard from "../components/ProductCard/ProductCard";
 import productsData from "../data/products.json";
+import { Spin } from "antd";
+import { LoadingOutlined } from "@ant-design/icons";
 
 function Home({ addToCart }) {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
   const [maxPrice, setMaxPrice] = useState(1000);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setProducts(productsData);
-  }, []);
+  setProducts(productsData);
+
+  const timer = setTimeout(() => {
+    setLoading(false);
+  }, 1800);
+
+  return () => clearTimeout(timer);
+}, []);
+
 
   const categories = useMemo(() => {
     return ["all", ...new Set(products.map((product) => product.category))];
@@ -147,26 +156,23 @@ function Home({ addToCart }) {
               </div>
             </div>
 
-            {filteredProducts.length === 0 ? (
-              <div className="alert alert-warning">
-                No products match your search or filters.
-              </div>
-            ) : (
-              <div className="row g-4">
-                {filteredProducts.map((product) => (
-                  <div
-                    className="col-sm-6 col-xl-4"
-                    key={product.id}
-                  >
-                      <ProductCard
-                        product={product}
-                        addToCart={addToCart}
-                      />
-
-                  </div>
-                ))}
-              </div>
-            )}
+           { loading ? ( 
+            <div className="d-flex justify-content-center align-items-center py-5"> 
+              <Spin indicator={ <LoadingOutlined style={{ fontSize: 48, color: "black", }} spin /> } /> 
+            </div>
+            )
+            : filteredProducts.length === 0 ? 
+                ( 
+                <div className="alert alert-warning"> No products match your search or filters. </div> )
+                  : 
+                  ( 
+                  <div className="row g-4"> 
+                    {filteredProducts.map((product) => ( 
+                      <div className="col-sm-6 col-xl-4" key={product.id} >
+                          <ProductCard product={product} addToCart={addToCart} /> 
+                      </div> ))
+                    } 
+                  </div> ) }
           </div>
         </div>
       </section>
